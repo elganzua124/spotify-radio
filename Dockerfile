@@ -11,7 +11,6 @@ RUN sed "s/^load-module module-console-kit/#load-module module-console-kit/" -i 
     && usermod -aG audio user
 
 ADD start.sh /bin/start.sh
-ADD spotifyd /bin/spotifyd
 ADD darkice.cfg /home/user/darkice.cfg
 
 USER user
